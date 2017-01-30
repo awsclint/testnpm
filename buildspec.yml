@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - mkdir apis && cd apis && mkdir admin-panel
-      - cd apis/admin-panel && npm i --debug
+      - cd apis/admin-panel && npm i --debug && ls -l
   build:
     commands:
       - echo Build started on `date`
@@ -12,7 +12,6 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo $CODEBUILD_SRC_DIR
-      - cat $CODEBUILD_SRC_DIR/apis/admin-panel/npm-debug.log
 artifacts:
   files:
     
