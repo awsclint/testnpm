@@ -5,6 +5,8 @@ phases:
     commands:
       - echo Installing RSpec...
       - gem install rspec
+      - mkdir apis/admin-panel
+      - cd apis/admin-panel && npm i
   build:
     commands:
       - echo Build started on `date`
