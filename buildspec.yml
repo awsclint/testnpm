@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - mkdir apis && cd apis && mkdir admin-panel
-      - (cd apis/admin-panel && npm i) || (echo "CAT Test")
+      - (cd apis/admin-panel && npm ixo) || (echo "CAT Test")
   build:
     commands:
       - echo Build started on `date`
