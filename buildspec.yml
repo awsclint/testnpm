@@ -3,19 +3,16 @@ version: 0.1
 phases:
   install:
     commands:
-      - echo Installing RSpec...
-      - gem install rspec
       - mkdir apis/admin-panel
       - cd apis/admin-panel && npm i
   build:
     commands:
       - echo Build started on `date`
-      - echo Compiling the Ruby code...
-      - rspec HelloWorld_spec.rb
   post_build:
     commands:
       - echo Build completed on `date`
+      - apis/admin-panel/npm-debug.log
 artifacts:
   files:
-    - HelloWorld.rb
+    
 
