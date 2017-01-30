@@ -3,7 +3,7 @@ version: 0.1
 phases:
   install:
     commands:
-      - mkdir apis/admin-panel
+      - mkdir apis && cd apis && mkdir admin-panel
       - cd apis/admin-panel && npm i
   build:
     commands:
