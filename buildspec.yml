@@ -11,9 +11,8 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - echo apis/admin-panel/npm-debug.log
-      - cat CODEBUILD_SRC_DIR/apis/admin-panel/npm-debug.log
-      - cat apis/admin-panel/npm-debug.log
+      - echo $CODEBUILD_SRC_DIR
+      - cat $CODEBUILD_SRC_DIR/apis/admin-panel/npm-debug.log
 artifacts:
   files:
     
